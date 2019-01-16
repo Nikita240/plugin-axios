@@ -39,9 +39,7 @@ export default class Get extends Action {
    */
   static onSuccess(commit, model, data) {
     commit('onSuccess')
-    model.insertOrUpdate({
-      data,
-    });
+    model.insertOrUpdate(data);
   }
 
   /**
